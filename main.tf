@@ -1,13 +1,13 @@
 
 terraform {
 
-  required_version = "0.14.10"
+  required_version = ">= 0.14.10"
 
   required_providers {
 
     aws = {
       source  = "hashicorp/aws"
-      version = "3.43.0"
+      version = "~> 5.0"
 
     }
 
@@ -17,6 +17,6 @@ terraform {
 
 # Configure the AWS Provider
 provider "aws" {
-  region  = "us-east-1"
-  profile = "default"
+  region  = "ap-southeast-2"
+  profile = "hoc-terraform-sso"
 }

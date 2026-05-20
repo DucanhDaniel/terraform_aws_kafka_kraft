@@ -19,11 +19,7 @@ variable "instance_type_kafka" {
   description = "Instance types to use for Kafka ec2 instances"
 }
 
-variable "instance_type_zookeeper" {
-  type        = string
-  default     = "t3.medium"
-  description = "Instance types to use for zookeeper ec2 instances"
-}
+
 
 variable "my_ip_address" {
   type        = string

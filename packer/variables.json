@@ -1,7 +1,7 @@
 {
-    "base_ami_id": "ami-04505e74c0741db8d",
+    "base_ami_id": "ami-06cd25c905a7e9a0f",
     "profile": "default",
-    "region": "us-east-1",
-    "subnet_id": "subnet-xxxxx",
+    "region": "ap-southeast-2",
+    "subnet_id": "subnet-0e50d443a9c7ed698",
     "instance_type": "t3.medium"
 }
