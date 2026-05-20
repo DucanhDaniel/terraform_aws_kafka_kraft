@@ -80,6 +80,31 @@ sudo systemctl status kafka
 ```
 *You should see a Leader elected and all 3 nodes listed under `CurrentVoters`.*
 
+### Kafka UI (Web Dashboard)
+
+After successfully applying the Terraform configuration, a dedicated EC2 instance is automatically provisioned to run the **Provectus Kafka UI** via Docker. 
+
+You can access the web dashboard using the URL provided in the Terraform output (`kafka_ui_url`).
+
+```bash
+# Example Output
+kafka_ui_url = "http://<KAFKA_UI_PUBLIC_IP>:8080"
+```
+
+> [!NOTE]
+> It may take 2-3 minutes after the infrastructure is provisioned for Docker to install and the Kafka UI container to start. If the site cannot be reached immediately, please wait a moment and refresh the page.
+
+#### Features Available in UI
+- Monitor cluster health and KRaft Quorum status.
+- View and manage Topics, Partitions, and Replication Factors.
+- Produce and consume messages directly from your browser.
+
+#### Kafka UI Dashboard Overview
+![Kafka UI Dashboard](image-1.png)
+
+#### Kafka Broker List
+![Kafka Broker List](image.png)
+
 ---
 
 ## Kafka Usage Examples
